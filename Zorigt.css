@@ -1,5 +1,7 @@
 /* YOUR NAME GOES HERE */
-Jana Zorigt
+:root {
+    --author: "Jana Zorigt";
+}
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
 html,
@@ -237,6 +239,11 @@ footer .icon {
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
 @media (prefers-reduced-motion: reduce) {
+    .icon {
+        -webkit-animation: none;
+        animation: none;
+    }
+
     @-webkit-keyframes icon-animation {
         0% {
             font-variation-settings: "TIME" 1;
@@ -348,7 +355,7 @@ img {
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-@media (min-width: 900px) {
+@media (min-width: 705px) {
 
     header,
     footer {
@@ -385,7 +392,7 @@ img {
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media (min-width: 1200px) {
+@media (min-width: 916px) {
 
     header,
     footer {
@@ -445,7 +452,7 @@ img {
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media (min-width: 1380px) {
+@media (min-width: 1430px) {
 
     header,
     footer {
